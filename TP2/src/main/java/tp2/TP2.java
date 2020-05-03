@@ -29,6 +29,7 @@ public class TP2 {
                 pile3.empiler(a);
                 System.out.println("Déplacement de l'élément "+i+" de pile1 vers pile3 ");
             }
+            
         }
         System.out.println("Pile 1: "+pile1.maListe.liste);
         System.out.println("Pile 2: "+pile2.maListe.liste);
