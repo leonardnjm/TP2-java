@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package tp2;
+import java.util.ArrayList;
+import java.util.Objects;
+import java.util.Random;
 
 /**
  *

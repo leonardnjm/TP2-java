@@ -4,13 +4,20 @@
  * and open the template in the editor.
  */
 package tp2;
+import java.util.ArrayList;
+import java.util.Objects;
+import java.util.Random;
 
 /**
  *
  * @author Leo
  */
 public class Liste {
+
     public int posAct;
+    public int Position;
+    public Object iOb;
+    public Object objectArray;
     
     public Liste(Object ob){
     iOb = ob;
@@ -26,9 +33,8 @@ public class Liste {
     return objectArray[posAct];
     }
     
-    
     public void Ajouter (Object ob){
-    iOb=ob;
+    iOb = ob;
     ////utilisation de la methode add
     Liste.add(ObjectAjouter);
     System.out.println(ObjectAjouter);
@@ -45,14 +51,5 @@ public class Liste {
     {
     //recuperation du 1er element (position 0)
         PremierElement=Liste.get(0);
-    }
-    
-    //Positionement sur dernier element
-    public int Dernier()
-    {
-        //recuperation de la taille de la liste pour recup le dernier
-        DernierElement=Liste.get(Liste.size()-1);
-    }
-    
-    
+    } 
 }
