@@ -20,6 +20,11 @@ public class Liste {
     int dernier=objectArray.length-1;
     }
     
+    public Object Suivant(){
+    posAct = posAct+1;
+    return objectArray[posAct];
+    }
+    
     
     public void Ajouter (Object ob){
     iOb=ob;
