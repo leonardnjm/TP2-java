@@ -13,10 +13,10 @@ public class Pile {
 
     protected Liste maListe;
     
-    public Pile (){
+ /*   public Pile (){
         maListe= new Liste(null);
     }
-    
+  */  
     public void empiler (Object ob){
         maListe.dernier();
         maListe.Ajouter(ob);
