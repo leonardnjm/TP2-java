@@ -14,7 +14,7 @@ public class HanoiTest {
     
     static void disques(int n){
         Hanoi iHanoi = new Hanoi();
-        ArrayList<Integer> diametres = new ArrayList<Integer>();
+        ArrayList<Integer> diametres = new ArrayList<>();
         for(int i=0; i<n; i++){
             int iInt = (int)(Math.random()*100);
             iHanoi.setDiameter(iInt);
@@ -40,7 +40,10 @@ public class HanoiTest {
     public static void main(String[] args) {
         java.util.Scanner entree =   new java.util.Scanner(System.in);
         System.out.println("Entrez le nombre de disque: ");
-	int n = entree.nextInt();
+        int n=20;
+        while (n<0 || n>10){
+	n = entree.nextInt();
+        }
         disques(n);
         tourHanoi(n, "pile1", "pile2", "pile3");
 	}
