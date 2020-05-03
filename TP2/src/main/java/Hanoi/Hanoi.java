@@ -32,8 +32,4 @@ public class Hanoi {
     
         return iDiameter;
     }
-    
-    public void sort(){
-        
-    }
 }

@@ -40,11 +40,15 @@ public class HanoiTest {
     public static void main(String[] args) {
         java.util.Scanner entree =   new java.util.Scanner(System.in);
         System.out.println("Entrez le nombre de disque: ");
-        int n=20;
+        int n=entree.nextInt();
         while (n<0 || n>10){
-	n = entree.nextInt();
+            System.out.println("Cette valeur n'est pas valable! Entrez un nombre compris entre 0 et 10.");
+            System.out.println("");
+            System.out.println("Entrez le nombre de disque: ");
+            n = entree.nextInt();
         }
         disques(n);
         tourHanoi(n, "pile1", "pile2", "pile3");
+        System.out.println("Votre partie est terminée. Vous pouvez voir ci-dessus les action a effectuer pour réaliser un minumum de coup");
 	}
 }
