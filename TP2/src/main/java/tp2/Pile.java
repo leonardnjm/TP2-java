@@ -19,11 +19,11 @@ public class Pile {
   */  
     public void empiler (Object ob){
         maListe.dernier();
-        maListe.Ajouter(ob);
+        maListe.ajouter(ob);
     }
     
     public void depiler (Object ob){
         maListe.dernier();
-        maListe.Supprimer();
+        maListe.supprimer();
     }
 }
