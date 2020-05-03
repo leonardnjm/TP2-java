@@ -10,5 +10,18 @@ package tp2;
  * @author Leo
  */
 public class Pile {
+    bonjour leo
+    public Liste iListe;
     
+    public Pile (){
+        iListe= new Liste(null);
+    }
+    
+    public void empiler (Object ob){
+        iListe.Ajouter(ob);
+    }
+    
+    public void dépiler (){
+        iListe.Supprimer();
+    }
 }

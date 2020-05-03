@@ -10,6 +10,7 @@ package tp2;
  * @author Leo
  */
 public class Liste {
+    public int posAct;
     
     public Liste(Object ob){
     iOb = ob;
@@ -31,6 +32,12 @@ public class Liste {
     ////utilisation de la methode add
     Liste.add(ObjectAjouter);
     System.out.println(ObjectAjouter);
+    }
+    
+    //Suppression d'un objet de la liste
+    public void Supprimer(){
+        //Utilisation de la méthode remove
+        Liste.remove(Position);
     }
     
     //possitionement sur premier element
