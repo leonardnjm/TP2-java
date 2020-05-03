@@ -16,7 +16,7 @@ public class Liste {
     public ArrayList<Object> liste;
     
     public Liste(){
-        liste= new ArrayList<Object>();
+        liste= new ArrayList<>();
         posAct=0;
     }
     
@@ -49,5 +49,10 @@ public class Liste {
             posAct--;
         }
         return b;
+    }
+    
+    public void affichage(){
+    
+    System.out.println("ArrayList : " + liste);
     }
 }
