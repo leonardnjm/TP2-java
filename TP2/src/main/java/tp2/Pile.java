@@ -31,7 +31,7 @@ public class Pile {
     
         public void affichage(){
     
-    System.out.println("ArrayList : " + maListe);
+    System.out.println("ma Pile1 : " + maListe.liste);
     }
     
 }

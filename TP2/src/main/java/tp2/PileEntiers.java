@@ -14,13 +14,5 @@ public class PileEntiers extends Pile {
     public void empiler(Integer a)
     {
     maListe.ajouter(a);
-    }
-    
-   /* 
-   public Integer read()
-   {
-   return (Integer) maListe.dernier();
-   }
-   */
-    
+    }   
 }

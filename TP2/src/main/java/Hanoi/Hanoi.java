@@ -5,6 +5,8 @@
  */
 package Hanoi;
 import tp2.PileEntiers;
+import tp2.Pile;
+import tp2.Liste;
 
 /**
  *
@@ -31,5 +33,7 @@ public class Hanoi {
         return iDiameter;
     }
     
-    
+    public void sort(){
+        
+    }
 }

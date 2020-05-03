@@ -4,21 +4,27 @@
  * and open the template in the editor.
  */
 package Hanoi;
-
+import java.util.ArrayList;
+import java.util.Collections;
 /**
  *
  * @author Alexandre
  */
 public class HanoiTest {
     
-    public void diques(int n){
+    static void disques(int n){
         Hanoi iHanoi = new Hanoi();
+        ArrayList<Integer> diametres = new ArrayList<Integer>();
         for(int i=0; i<n; i++){
             int iInt = (int)(Math.random()*100);
             iHanoi.setDiameter(iInt);
-            iHanoi.iPE1.empiler(iHanoi.getDiameter());
+            diametres.add(iHanoi.getDiameter());
         }
-        iHanoi.iPE1.sort
+        Collections.sort(diametres);
+        for(int i=0; i<n; i++){
+            iHanoi.iPE1.empiler(diametres.get(i));
+        }
+        iHanoi.iPE1.affichage();
     }
     
     static void tourHanoi(int n, String pile1, String pile2, String pile3){
@@ -34,7 +40,7 @@ public class HanoiTest {
         java.util.Scanner entree =   new java.util.Scanner(System.in);
         System.out.println("Entrez le nombre de disque: ");
 	int n = entree.nextInt();
-        disque(n);
+        disques(n);
         tourHanoi(n, "pile1", "pile2", "pile3");
 	}
 }
