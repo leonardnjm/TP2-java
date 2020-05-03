@@ -13,37 +13,41 @@ import java.util.ArrayList;
 public class Liste {
 
     public int posAct;
-    public int N;
-    private Object iOb;
-    Object objectArray[];
-    public ArrayList<Object> liste= new ArrayList();
+    public ArrayList<Object> liste;
     
-    public Liste(Object ob){
-    iOb = ob;
-    System.out.println("initialisation= "+iOb);
+    public Liste(){
+        liste= new ArrayList<Object>();
+        posAct=0;
     }
     
     public void dernier(){
-    int dernier=objectArray.length-1;
+        posAct=liste.size()-1;
     }
     
-    public Object Suivant(){
-    posAct = posAct+1;
-    return objectArray[posAct];
+    public Object suivant(){
+        Object c=null;
+        if(posAct<liste.size()){
+            c=liste.get(posAct+1);
+        }
+        return c;
     }
     
-    public void Ajouter (Object ob){
-    iOb = ob;
+    public void ajouter (Object ob){
     ////utilisation de la methode add
-    liste.add(iOb);
-    System.out.println(iOb);
+    liste.add(posAct,ob);
+    posAct++;
     }
     
     public void premier (){
-        int premier=objectArray[0];
+        posAct=0;
     }
     
-    public void Supprimer(){
-        liste.remove(posAct);
+    public Object supprimer(){
+        Object b=null;
+        if(liste.isEmpty()==false){
+            b=liste.remove(posAct);
+            posAct--;
+        }
+        return b;
     }
 }
