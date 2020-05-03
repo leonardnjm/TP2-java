@@ -9,6 +9,11 @@ package tp2;
  *
  * @author Leo
  */
-public class PileEntiers {
+public class PileEntiers extends Pile {
+    
+    public Integer deplier()
+    {
+        return(Integer) super.depiler();
+    }
     
 }

@@ -11,17 +11,19 @@ package tp2;
  */
 public class Pile {
 
-    public Liste iListe;
+    protected Liste maListe;
     
     public Pile (){
-        iListe= new Liste(null);
+        maListe= new Liste(null);
     }
     
     public void empiler (Object ob){
-        iListe.Ajouter(ob);
+        maListe.dernier();
+        maListe.Ajouter(ob);
     }
     
-    public void dépiler (){
-        iListe.Supprimer();
+    public void depiler (Object ob){
+        maListe.dernier();
+        maListe.Supprimer();
     }
 }
