@@ -5,8 +5,6 @@
  */
 package tp2;
 import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Random;
 
 /**
  *
@@ -15,9 +13,9 @@ import java.util.Random;
 public class Liste {
 
     public int posAct;
-    public int Position;
     public Object iOb;
-    public Object objectArray;
+    public int objectArray[];
+    public ArrayList<Object> liste;
     
     public Liste(Object ob){
     iOb = ob;
@@ -36,20 +34,21 @@ public class Liste {
     public void Ajouter (Object ob){
     iOb = ob;
     ////utilisation de la methode add
-    Liste.add(ObjectAjouter);
-    System.out.println(ObjectAjouter);
+    liste.add(iOb);
+    System.out.println(iOb);
     }
     
     //Suppression d'un objet de la liste
     public void Supprimer(){
+        int element=objectArray[posAct];
         //Utilisation de la méthode remove
-        Liste.remove(Position);
+        liste.remove(element);
     }
     
     //possitionement sur premier element
-    public int Premier ()
+    public void Premier ()
     {
     //recuperation du 1er element (position 0)
-        PremierElement=Liste.get(0);
-    } 
+        int premier=objectArray[0];
+    }
 }

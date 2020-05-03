@@ -10,7 +10,7 @@ package tp2;
  * @author Leo
  */
 public class Pile {
-    bonjour leo
+
     public Liste iListe;
     
     public Pile (){
