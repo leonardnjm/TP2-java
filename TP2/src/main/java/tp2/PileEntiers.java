@@ -11,9 +11,16 @@ package tp2;
  */
 public class PileEntiers extends Pile {
     
-    public Integer deplier()
+    public void empiler(Integer a)
     {
-        return(Integer) super.depiler();
+    maListe.ajouter(a);
     }
+    
+   /* 
+   public Integer read()
+   {
+   return (Integer) maListe.dernier();
+   }
+   */
     
 }
