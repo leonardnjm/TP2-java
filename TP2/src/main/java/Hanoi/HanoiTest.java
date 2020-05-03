@@ -10,5 +10,7 @@ package Hanoi;
  * @author Alexandre
  */
 public class HanoiTest {
-    
+    public static void main(String[] args){
+        System.out.println("Hello word!");
+    }
 }
