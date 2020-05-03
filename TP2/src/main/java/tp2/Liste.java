@@ -19,7 +19,7 @@ public class Liste {
         liste= new ArrayList<>();
         posAct=0;
     }
-    
+
     public void dernier(){
         posAct=liste.size()-1;
     }
@@ -51,8 +51,5 @@ public class Liste {
         return b;
     }
     
-    public void affichage(){
-    
-    System.out.println("ArrayList : " + liste);
-    }
+
 }

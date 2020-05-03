@@ -13,10 +13,12 @@ public class Pile {
 
     protected Liste maListe;
     
- /*   public Pile (){
-        maListe= new Liste(null);
+    
+    public Pile (){
+        maListe= new Liste();
     }
-  */  
+
+   
     public void empiler (Object ob){
         maListe.dernier();
         maListe.ajouter(ob);
@@ -26,4 +28,10 @@ public class Pile {
         maListe.dernier();
         maListe.supprimer();
     }
+    
+        public void affichage(){
+    
+    System.out.println("ArrayList : " + maListe);
+    }
+    
 }
