@@ -22,7 +22,7 @@ public class Pile {
         maListe.ajouter(ob);
     }
     
-    public void depiler (Object ob){
+    public void depiler (){
         maListe.dernier();
         maListe.supprimer();
     }
