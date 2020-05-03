@@ -21,6 +21,7 @@ public class HanoiTest {
             diametres.add(iHanoi.getDiameter());
         }
         Collections.sort(diametres);
+        Collections.reverse(diametres);
         for(int i=0; i<n; i++){
             iHanoi.iPE1.empiler(diametres.get(i));
         }
