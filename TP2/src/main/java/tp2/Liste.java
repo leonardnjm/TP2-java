@@ -13,9 +13,10 @@ import java.util.ArrayList;
 public class Liste {
 
     public int posAct;
-    public Object iOb;
-    public int objectArray[];
-    public ArrayList<Object> liste;
+    public int N;
+    private Object iOb;
+    Object objectArray[];
+    public ArrayList<Object> liste= new ArrayList();
     
     public Liste(Object ob){
     iOb = ob;
@@ -38,17 +39,11 @@ public class Liste {
     System.out.println(iOb);
     }
     
-    //Suppression d'un objet de la liste
-    public void Supprimer(){
-        int element=objectArray[posAct];
-        //Utilisation de la méthode remove
-        liste.remove(element);
+    public void premier (){
+        int premier=objectArray[0];
     }
     
-    //possitionement sur premier element
-    public void Premier ()
-    {
-    //recuperation du 1er element (position 0)
-        int premier=objectArray[0];
+    public void Supprimer(){
+        liste.remove(posAct);
     }
 }
